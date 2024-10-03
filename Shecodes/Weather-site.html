@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather site</title>
+    <style>
+        /*we can also do this right here;
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        To make our work cleaner, this way, we don't need to add what is in the bracket to the h1-h3
+        Its kind of like a rule "do not repeat yourself"*/
+      h1 {
+        color: #1a64d6;
+        font-size: 34px;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        display: block;
+        margin: 0;
+        padding: 1.2% 1.2% 1% 1.2%;
+      }
+      h2 {
+        text-align: center;
+        font-size: 32px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        margin: 0;
+      }
+      h3 {
+        font-size: 19px;
+        text-align: center;
+        padding: 0% 0% 4% 0%;
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 0;
+      }
+      ul {
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        padding: 30px 0px;
+        border-radius: 12px;
+        margin: 0 auto;
+        transition: all 200ms ease-in-out;
+        max-width:400px;
+      }
+      li:hover {
+        background:#FFFBEF;
+      }
+      .cloud {
+        color: #1a64d6;
+        font-size: 34px;
+        text-align: center;
+        display: block;
+        margin: 0;
+        font-weight: 600;
+      }
+      .weather {
+        font-size: 18px;
+        text-align: center;
+        font-family: monospace;
+        opacity: 0.7;
+        font-weight: normal;
+      }
+      p {
+        font-family: monospace;
+        opacity: 0.7;
+        font-size: 18px;
+        text-align: center;
+      }
+      button {
+        font-size: 16px;
+        color: white;
+        display: block;
+        margin: 0 auto 30px;
+        padding: 20px 25px 20px 25px;
+        border: 1px solid #1a64d6;
+        border-radius: 30px;
+        background: #1a64d6;
+        transition: all 200ms ease-in-out;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #1a64d6;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cloud">🌤</div>
+    <h1>Currently 21° in Tokyo</h1>
+    <h2>13° / <strong> 23°</strong></h2>
+    <ul>
+      <li>
+        <h3>🌧Tomorrow</h3>
+        <div class="weather">10° / <strong>22°</strong></div>
+      </li>
+      <li>
+        <h3>🌥 Saturday</h3>
+        <div class="weather">15° / <strong>17°</strong></div>
+      </li>
+      <li>
+        <h3>☀️ Sunday</h3>
+        <div class="weather">25° / <strong>28°</strong></div>
+      </li>
+    </ul>
+    <button>Change city</button>
+    <p>Coded by Igbokwe Valerie</p>
+  </body>
+</html>

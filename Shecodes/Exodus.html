@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exodus Upload</title>
+    <style>
+      .container {
+        margin: 0 auto;
+        padding: 10px 25px 25px;
+        text-align: center;
+        border-radius: 4%;
+        max-width: 50%;
+        background-image: linear-gradient(#e66465, #9198e5);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: azure;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+      }
+      button {
+        border-radius: 4%;
+        padding: 15px 20px;
+        font-size: 12px;
+        background-color: #6937be;
+        color: aliceblue;
+        margin: 10px 0 20px;
+        border: none;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: #8054ce;
+        color: aliceblue;
+        cursor: pointer;
+      }
+      .linkColor {
+        color: black;
+        font-weight: bold;
+      }
+      .linkColor:hover {
+        text-decoration: dotted;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I Love Books! 📖</h1>
+      <h2>Especially <em>'Exodus'</em></h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/143/174/original/Exodus.jpg?1726153550"
+        alt="Exodus book cover"
+      />
+      <hr />
+      <p>
+        There’s something magical about books that pull you into new worlds, and
+        Exodus is no exception. In a future where technology has reshaped the
+        world, Exodus tells the story of Martin Wesley, a tech mogul who, along
+        with his adopted daughters, must survive an apocalyptic nightmare caused
+        by his own creation. Filled with gripping fantasy, tragedy, technology,
+        action and fulfillment, Exodus takes you on a journey where humanity’s
+        greatest advancements become its greatest threats. Will Martin and his
+        daughters be able to undo the damage and save the world? Or will
+        monsters from another realm make survival impossible? Stay tuned for the
+        release of Exodus—a tale of love, loss, and redemption in a world gone
+        wrong.
+      </p>
+      <br />
+      <strong>"Exodus" is coming soon.</strong>
+      <p>
+        This is my debut novel, it is going to be first attempt to coming out of
+        the shadows of ghostwriting and owning my very own book, to be posted on
+        webnovel as an Exclusive. I can’t wait to share it with you. A thrilling
+        blend of love, technological breakthroughs, and heart-wrenching tragedy
+        awaits you. Keep your eyes peeled for the release. Follow me on Webnovel
+        to stay updated!
+      </p>
+      <a
+        href="https://www.webnovel.com/profile/4309979720"
+        target="_blank"
+        class="linkColor"
+      >
+        Learn more
+      </a>
+      <span>– Follow me on Webnovel for updates on Exodus!</span>
+      <br />
+      <button class="readButton">
+        Read the book here <small>(Coming Soon)</small>
+      </button>
+      <footer>
+        This page was made by
+        <a href="https://x.com/Valerie7729" target="_blank" class="linkColor">
+          Igbokwe Valerie</a
+        >
+      </footer>
+    </div>
+    <script>
+      function readBook() {
+        let name = prompt("What is your name?");
+        let book = prompt("What book are you currently reading/writing?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! but the book isn't out yet😉, till then, make sure to enjoy " +
+            book +
+            "!"
+        );
+      }
+      let readButton = document.querySelector(".readButton");
+      readButton.addEventListener("click", readBook);
+    </script>
+  </body>
+</html>

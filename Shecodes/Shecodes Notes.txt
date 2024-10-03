@@ -1,0 +1,170 @@
+HOW TO GET COLOR PALETTES AND GRADIENTS FROM SHECODES
+>>shecodes.io/palettes
+>>shecodes.io/gradients
+
+html- Elements
+<h1> meams heading 1, it highlights the text in bold
+</h1> this is to close it, to show that, thats it for heading one 
+there is also h2-6
+<p> and </p> for a paragraph
+e.g 
+<p>
+  creatires of the night
+</p>
+
+this would make "creatures og the night" to be in paragraph 
+<strong> to make it bold
+<em> (emphasis)to make it italic
+NB; a;ways remember to close "/" or the comp wont know when to stop.
+<br> is used to make a new line
+its added at the end of the very line ur in, meaning you would be like
+of the night <br>
+its a self closing type, so you dont have to worry about closing cuz well
+its just a new line, you dont hv to close a new line.
+but for visual references developers like to write it as <br />
+
+you can add multiple lines 
+e.g
+of the night
+<br />
+<br />
+<br />
+e.t.c
+
+
+another self closing one is <hr> also known as <hr />
+what it does it to create a horizoltal line that would run across the whole page.
+for an unordered list;
+
+<ul>
+  <li>
+    SheCodes Basics
+  </li>
+  <li>
+    SheCodes Plus
+  </li>
+  <li>
+    SheCodes Responsive
+  </li>
+  <li>
+    SheCodes React
+  </li>
+</ul>
+
+it would create
+. shecones workshop
+. shecodes+
+etc 
+nb; the "." represent the bullet point that would be created.
+
+to male an ordered list we replace the <ul> and </ul> by <ol> and </ol>
+
+it changeds the bullet points to numbers 
+1.
+2.
+3.
+
+like that.
+
+
+
+naturally, you might want to go ahead of urself and decide to just keep using <br> 
+to seperate it while listing but google wont recognize it.
+
+challange: https://codepen.io/Val-ster/pen/JjzYjPm?editors=1100
+
+ 
+
+html- Attributes
+
+these are usefule for us to give the comp extra information to the browser, so that it knows what it has to do with our HTML code
+
+now, let us talk qabout how to buld a link
+we would have to use <a> & </a>
+
+if we just use
+<a>
+shecodes
+</a>
+
+it would creat that path shit, showung that it is a link but when you click on it, it wouldnt know where to go
+so that means, we would have to add a URL
+
+so the url to shecodes is shecodes.io
+
+that is were ' href="" ' comes in (hyper link reference)
+
+this where we would add the link
+i.e 
+<a href="https://shecodes.io">
+shecodes
+</a>
+now, practically,now that the link is set, if we click the link, the stuff would load on that very tab, so...to change that, we can add ' target="_blank"
+now it would open on a different tab.
+i.e 
+<a href="https://shecodes.io" target="_blank">
+
+
+
+now lets assume we wanna add an image
+
+i.e 
+<img> it is a self closing element bcos it doesnt hv a text <img />
+
+as the first one, we would need to tell the browser where to go
+
+with the ' src="" ' (source)
+
+i.e 
+<img src="the link to the picture(from online)" />
+
+npw, we can adjust the side of the imagine using 'width="the size as numbers (300,500)" ' which adjusts the size of the pixels 
+
+i.e
+<img src="the link to the picture(from online)" width="300" />
+
+challenge=https://codepen.io/Val-ster/pen/yLwYLbv?editors=1010
+
+In HTML/javascript "or" is written as ||
+"and" is written as &&
+There are different ways to add ".toLowerCase();" to code
+e.g 
+<script>
+      let country = prompt("What country are you from?");
+
+      if (country === "portugal" || country === "brazil") {
+        alert("You speak Portuguese!");
+      } else {
+        alert("You don't speak Portuguese!");
+      }
+    </script>
+
+We add it by 
+1. <script>
+      let country = prompt("What country are you from?");
+
+      if (country.toLowerCase() === "portugal" || country.toLowerCase() === "brazil") {
+        alert("You speak Portuguese!");
+      } else {
+        alert("You don't speak Portuguese!");
+      }
+    </script>
+2. <script>
+      let country = prompt("What country are you from?");
+       country = country.toLowerCase();
+      if (country === "portugal" || country === "brazil") {
+        alert("You speak Portuguese!");
+      } else {
+        alert("You don't speak Portuguese!");
+      }
+    </script>
+3. <script>
+      let country = prompt("What country are you from?").toLowerCase();
+
+      if (country === "portugal" || country === "brazil") {
+        alert("You speak Portuguese!");
+      } else {
+        alert("You don't speak Portuguese!");
+      }
+    </script>
+NB: it helps to work with lower case(in portugal and brazil) to help the instance for country to be true(in lowercase)
